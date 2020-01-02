@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400i');
+@import url('https://fonts.googleapis.com/css?family=Lora:300i,400i');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+	color: #2b193d;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.site-header {
+  background: #ffd700;
+  text-align: center;
+  padding: 1em;
+  color: #3b0075;
+}
+#title {
+  font-family: 'Lily Script One', cursive;
+  font-size: 5em;
+}
+header p {
+  font-size: 2em;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: 400;
+}
+#img-div {
+	padding: 1em;
+  background: #4b0082; #3b0075; #47008f; #472965; #2b193d;
+}
+#img-div figure {
+  width: 100%;
+  margin: auto;
+  padding: 3em .5em 0;
+}
+#img-div img {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  border: .6em solid #ffd700;
+	border-style: double;
+}
+#img-div figcaption {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	letter-spacing: .05em;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.25em;
+  color: #ffd700;
+  padding: 2em 0;
+	font-weight:300;
+}
+.intro {
+  padding: 2em;
+}
+.wrapper {
+	width: 100%;
+}
+.container {
+	width: 90%;
+	margin: auto;
+	padding: 1em 0;
+	max-width: 538px;
+}
+section h2 {
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size: 4em;
+	font-style: italic;
+	letter-spacing:inherit;
+	color: #2b193d;
+  padding: 1em 0;
+  text-align: center;
+	text-transform: lowercase;
+}
+.content {
+	width: 100%;
+	margin: auto;
+}
+.life .wrapper,
+.work .wrapper,
+.tribute .wrapper {
+	padding-top: 10em;
+}
+.life .wrapper {
+	background: fixed bottom center / cover url('../img/East_India_House_by_Thomas_Malton_the_Younger.jpg');
+}
+.life .container {
+	background: rgb(75, 0, 130,.97);
+	padding: 1em;
+	margin-bottom: 10em;
+}
+.life h2 {
+	padding: .5em 0;
+	color: #ffd700; #e6c300;
+	font-weight: 500;
+}
+.life .content {
+	padding: 0;
+}
+.life .row {
+	padding: 0 0 3em;
+}
+.life .content p {
+	padding: 1em;
+	color: #eaccff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.work .wrapper {
+	background: fixed bottom center / cover url('../img/engine.jpg') rgb(75, 0, 130);
+	background-blend-mode: multiply;
+}
+.work .container {
+	padding: 1em;
+	margin-bottom: 10em;
+	background: rgba(255, 215, 0, .85);
+}
+.work h2 {
+	padding: .5em 0;
+	color: #590099;
+}
+.work .content {
+	padding: 0;
+}
+.work .row {
+	display: flex;
+	padding: 1em 0 3em;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+.work .content p {
+	padding: 1em;
+	color:  #1a1a1a;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+.tribute .wrapper {
+	background: repeat url('../img/bg.jpg') #fff;
+}
+.tribute .container {
+	background: rgba(255,255,255,1);
+	padding: 1em;
+	margin-bottom: 10em;
+}
+.google-doodle {
+	width: 100%;
+  max-width: 418px;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.tribute h2 {
+	padding: .5em 0;
+	color: #6800b3;
+	font-weight: 500;
+}
+.tribute .content {
+	padding: 0;
+}
+.tribute .row {
+	display: flex;
+	padding: 1em 0 3em;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+.year {
+	color: #eaccff;
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	font-size: 2.5em;
+	font-weight: 700;
+	position: absolute;
+	top: -25px;
+	left: 18px;
+}
+.event {
+	padding: 1em 1em 1em;
+	text-align: justify;
+	color: #2d004d;
+	font-size: 1.1em;
+	font-weight: 400;
+	z-index: 2;
+}
+.quote {
+  padding: 4em;
+  background: #eaccff;
+	width: 100%;
+}
+.quote p {
+  padding-bottom: 2em;
+	font-weight: 400;
+	color: #4b0082;
+	width: 100%;
+	font-family: 'Noto Serif', serif;
+	font-size: 1.25em;
+	font-style: italic;
+}
+.quote cite {
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.5em;
+	color:  #4b0082;
+}
+aside {
+  background: #4b0082;
+	color: #e3d7ef;
+  padding: 1em;
+	font-weight: 300;
+}
+.info .container {
+	padding: 3em;
+}
+.site-footer {
+  background: #3b0066;
+  color: #eaccff;
+  padding: 2em;
+	word-spacing: .15em;
+	text-align: center;
+	font-weight: 300;
+}
+.info a:link,
+.info a:visited,
+footer a:link,
+footer a:visited {
+	color: #ffd700;
+}
+.info a:hover,
+.info a:active,
+footer a:hover,
+footer a:active {
+	text-decoration: underline;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 670px) {
+	.container {
+		width: 90%;
+		margin: auto;
+		padding: 1em 0;
+		max-width: 538px;
+	}
+	#img-div img {
+		border-width: .7em;
+	}
+	#img-div figcaption {
+		letter-spacing: .05em;
+	  padding: 1em;
+	  font-size: 1.25em;
+	  padding: 2em 0;
+		font-weight: 300;
+	}
+	.life .container,
+	.work .container,
+	.tribute .container {
+		padding: 2em;
+	}
+	.life .content,
+	.work .content,
+	.tribute .content {
+		padding: 0 3em 3em;
+	}
+	.life h2,
+	.work h2,
+	.tribute h2 {
+		padding: 1em 0;
+	}
+	.quote {
+	  width: 90%;
+		margin: auto;
+		max-width: 538px;
+	}
+	.google-doodle {
+		max-width: 660px;
+	}
+	.year {
+		left: -30px;
+	}
+	.link-list {
+		display: flex;
+		align-content: stretch;
+		justify-content: space-between;
+		flex: 1;
+		width: 100%;
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 769px) {
+	.container {
+		width: 70%;
+		margin: auto;
+		padding: 2em 0;
+		max-width: 769px;
+	}
+	.quote {
+	  width: 70%;
+		margin: auto;
+		max-width: 769px;
+	}
+}
+@media (min-width: 1285px) {
+	.container {
+		width: 60%;
+}
+	.quote {
+	  width: 60%;
+	}
+}
